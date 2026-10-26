@@ -23,10 +23,23 @@
   /* ---------- login ---------- */
   function showLogin(note) {
     root.innerHTML = '<form class="login" id="login-form"><h1>Site admin</h1><p>Enter the admin password to edit the portfolio.</p>' +
-      '<label for="pw">Password<input id="pw" type="password" autocomplete="current-password" required></label>' +
+      '<label for="pw">Password<input id="pw" type="password" autocomplete="current-password" required><button type="button" id="pw-show" class="inln" aria-pressed="false">Show</button></label>' +
       '<p class="msg err" id="login-msg" role="status">' + esc(note || "") + '</p>' +
       '<div class="ctl"><button type="submit" class="btn primary">Log in</button></div></form>';
     document.getElementById("pw").focus();
+    (function () {
+      var pw = document.getElementById("pw");
+      var show = document.getElementById("pw-show");
+      var visible = false;
+      function apply() {
+        pw.type = visible ? "text" : "password";
+        show.setAttribute("aria-pressed", String(visible));
+        show.textContent = visible ? "Hide" : "Show";
+      }
+      show.addEventListener("click", function () { visible = !visible; apply(); });
+      apply();
+    })();
+
     document.getElementById("login-form").addEventListener("submit", function (e) {
       e.preventDefault();
       var m = document.getElementById("login-msg"); m.textContent = "";
