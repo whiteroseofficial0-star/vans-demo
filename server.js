@@ -64,14 +64,28 @@ try {
   auth = JSON.parse(fs.readFileSync(AUTH_FILE, 'utf8'));
 } catch (e) {
   let pw = process.env.ADMIN_PASSWORD;
-  const generated = !pw;
-  if (generated) pw = crypto.randomBytes(9).toString('base64url');
+  let pwSource = 'ADMIN_PASSWORD';
+  if (!pw) {
+    // Look for a default password bundled with the seed so a first deploy still has a known login.
+    try {
+      const seedEnv = path.join(SEED_DIR, '.env');
+      if (fs.existsSync(seedEnv)) {
+        const m = fs.readFileSync(seedEnv, 'utf8').split(/\r?\n/).find(l => /^ADMIN_PASSWORD\s*=/.test(l));
+        if (m) {
+          const v = m.replace(/^ADMIN_PASSWORD\s*=\s*/, '').replace(/["']/g, '').trim();
+          if (v) { pw = v; pwSource = 'seed/.env'; }
+        }
+      }
+    } catch (e) { /* seed env is best effort */ }
+    if (!pw) pw = crypto.randomBytes(9).toString('base64url');
+  }
   setPassword(pw);
-  if (generated) {
-    console.log('\n  First run: your admin password is  ' + pw);
-    console.log('  Log in at /admin and change it under "Password".\n');
-  } else {
+  if (pwSource === 'ADMIN_PASSWORD') {
     console.log('\n  Admin password set from ADMIN_PASSWORD. Change it any time under "Password" in /admin.\n');
+  } else if (pwSource === 'seed/.env') {
+    console.log('\n  First run: your admin password is  ' + pw + '  (from seed/.env). Change it under /admin → Password.\n');
+  } else {
+    console.log('\n  First run: your admin password is  ' + pw + '  (generated). Change it under /admin → Password.\n');
   }
 }
 
