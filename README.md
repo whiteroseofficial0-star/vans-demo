@@ -15,8 +15,9 @@ node server.js
 - Website: http://localhost:3000/
 - Admin panel: http://localhost:3000/admin
 
-On the very first start the terminal prints an admin password. Log in at `/admin` and change it under the **Password** tab. To choose the first password yourself, copy `.env.example` to `.env` and fill in `ADMIN_PASSWORD` before the first start.
+On the very first start the terminal prints an admin password. Log in at `/admin` and change it under the **Password** tab. To pick the first password yourself, copy `.env.example` to `.env` and fill in `ADMIN_PASSWORD` before the first start.
 
+The first-run password is read in this order: the `ADMIN_PASSWORD` environment variable on the host, then a `seed/.env` file bundled with the project, then a random password printed in the server log. That means the documented default in `.env.example` (`ADMIN_PASSWORD=admin123@#`) is usable as-is on a fresh deploy, and you can still override it with the host's environment variable or by editing `seed/.env`. Change it any time under **Password** in `/admin`.
 The admin panel is never linked from the public site, and `robots.txt` keeps it (and the order pages) out of search engines. The address is still `/admin`, so protect it with a strong password. If you want to keep the path itself secret, change the `/admin` route in `server.js`.
 
 ## What the admin panel controls
