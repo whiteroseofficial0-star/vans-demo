@@ -1,0 +1,9 @@
+{
+  "name": "artist-portfolio",
+  "version": "1.0.0",
+  "description": "Single-artist portfolio website with an admin panel. No dependencies.",
+  "private": true,
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

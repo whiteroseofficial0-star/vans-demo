@@ -1,0 +1,224 @@
+{
+  "profile": {
+    "name": "Vins",
+    "alias": "Vijay Narain Seth",
+    "tagline": "Cartoonist & illustrator",
+    "location": "Mumbai",
+    "lede": "A gently satirical line on Indian life, drawn in ink and watercolour. Political pocket cartoons for Himmat, the first Indian contributing cartoonist at Reader's Digest, shown in museums across Europe.",
+    "portraits": [
+      {
+        "file": "/uploads/portrait-vins-formal.jpg",
+        "alt": "Black and white portrait of Vijay Narain Seth, bearded and wearing glasses"
+      },
+      {
+        "file": "/uploads/portrait-vins-closeup.jpg",
+        "alt": "Colour close-up portrait of Vijay Narain Seth smiling"
+      }
+    ],
+    "facts": [
+      {
+        "label": "Born",
+        "value": "10 March 1944"
+      },
+      {
+        "label": "Died",
+        "value": "26 June 2014"
+      },
+      {
+        "label": "Mentor",
+        "value": "Mario Miranda"
+      }
+    ]
+  },
+  "about": {
+    "heading": "Humane, gently satirical work on the foibles of Indian life",
+    "pull": "He regarded the veteran cartoonist Mario Miranda as his mentor.",
+    "bio": "Vijay Narain Seth, known by his pen name Vins, graduated from the Sir J. J. School of Fine Arts in Mumbai in 1968. While still a student he walked across to the Times of India office, almost next door, to watch Mario Miranda at work, and he began freelancing for Caravan and Himmat magazines.\n\nHe was the political cartoonist of the weekly Himmat from 1965 to 1981, drawing the pocket cartoon Chalta Hai every week and, from 1969, two further cartoons with national and international comment. Later he freelanced on science, computers, business and social issues.\n\nHe travelled widely in Europe and met leading graphic artists, among them the French cartoonist André François, whom he counted as an influence. His work was shown in cartoon festivals and exhibitions across Europe and Asia."
+  },
+  "works": [
+    {
+      "id": "p1",
+      "title": "",
+      "medium": "Watercolour, ink pen on paper",
+      "dimensions": "17.6 × 13 cm",
+      "year": "",
+      "alt": "Watercolour cartoon of three cheerful graduates in suits and a sari, tossing mortarboards trailing plug cords, with computers on a desk behind them",
+      "visible": true,
+      "price": 0,
+      "file": "/uploads/vins-1.jpg"
+    },
+    {
+      "id": "p2",
+      "title": "",
+      "medium": "Watercolour, ink pen on paper",
+      "dimensions": "17.9 × 13.5 cm",
+      "year": "",
+      "alt": "Watercolour cartoon of a man in a dark suit presenting a bouquet to a smiling woman, with an Indian flag and a French flag on the flowers",
+      "visible": true,
+      "price": 0,
+      "file": "/uploads/vins-2.jpg"
+    },
+    {
+      "id": "p3",
+      "title": "",
+      "medium": "Watercolour, ink pen on paper",
+      "dimensions": "18.2 × 13.1 cm",
+      "year": "",
+      "alt": "Watercolour cartoon of a lively group carrying trays and goblets of sweets, dancing across a yellow background with pink hearts",
+      "visible": true,
+      "price": 0,
+      "file": "/uploads/vins-3.jpg"
+    },
+    {
+      "id": "p4",
+      "title": "",
+      "medium": "Watercolour, ink pen on paper",
+      "dimensions": "18.4 × 13.5 cm",
+      "year": "",
+      "alt": "Watercolour cartoon of a man asleep on a table donating blood, while a nurse and announcer award a number 115 rosette and a queue with haloes waits behind",
+      "visible": true,
+      "price": 0,
+      "file": "/uploads/vins-4.jpg"
+    },
+    {
+      "id": "p5",
+      "title": "",
+      "medium": "Watercolour, ink pen on paper",
+      "dimensions": "17.2 × 12.8 cm",
+      "year": "",
+      "alt": "Watercolour cartoon of a speaker at a lectern dreaming of a mother and baby, while a smiling audience watches a large portrait on a banner",
+      "visible": true,
+      "price": 0,
+      "file": "/uploads/vins-5.jpg"
+    }
+  ],
+  "career": [
+    {
+      "year": "1944",
+      "title": "Born Vijay Narain Seth",
+      "text": "Born on 10 March. Works under the pen name Vins."
+    },
+    {
+      "year": "1965–1981",
+      "title": "Political cartoonist, Himmat weekly",
+      "text": "Draws the weekly pocket cartoon Chalta Hai. From 1969 he adds two more cartoons commenting on national and international affairs."
+    },
+    {
+      "year": "1968",
+      "title": "Graduates from Sir J. J. School of Fine Arts, Mumbai",
+      "text": "Already freelancing for Caravan and Himmat as a student."
+    },
+    {
+      "year": "1971–1984",
+      "title": "Science Today",
+      "text": "Contributes to the Times of India science publication."
+    },
+    {
+      "year": "1976",
+      "title": "First Indian contributing cartoonist, Reader's Digest India",
+      "text": "Joins the Indian edition when Rahul Singh is chief editor. Later freelances for Business India, Business World and the Indian Express group's business publications."
+    },
+    {
+      "year": "1978–1982",
+      "title": "Treffpunkt, Zurich",
+      "text": "Invited to contribute cartoons to the fortnightly edited by Heidi Rudolf. He also drew for the Swiss satirical weekly Nebelspalter."
+    },
+    {
+      "year": "1988",
+      "title": "The Penguin Book of Indian Cartoons",
+      "text": "His work is included in the anthology."
+    },
+    {
+      "year": "1990s",
+      "title": "International festivals and exhibitions",
+      "text": "Prizes in Edinburgh (1990), Berne (1996) and Taejon (1997), with exhibitions in Europe, and in Japan in 1998."
+    },
+    {
+      "year": "2014",
+      "title": "Died on 26 June, aged 70",
+      "text": "His cartoons remain in museum collections in Switzerland and Turkey."
+    }
+  ],
+  "recognition": [
+    {
+      "heading": "Awards",
+      "items": [
+        {
+          "title": "Fifth prize",
+          "detail": "FECO Edinburgh International Cartoon Festival · 1990"
+        },
+        {
+          "title": "First prize",
+          "detail": "Swiss Coalition of Development Organizations, Berne · 1996"
+        },
+        {
+          "title": "Fifth prize",
+          "detail": "Taejon International Cartoon Institute, Korea · 1997"
+        }
+      ]
+    },
+    {
+      "heading": "Collections",
+      "items": [
+        {
+          "title": "International Cartoon Museum",
+          "detail": "Permanent collection"
+        },
+        {
+          "title": "Karikatur & Cartoon Museum, Basel",
+          "detail": "Permanent collection · Switzerland"
+        },
+        {
+          "title": "Aydin Dogan Wakfi online cartoon museum",
+          "detail": "21 satirical cartoons · Istanbul, Turkey"
+        }
+      ]
+    },
+    {
+      "heading": "Exhibited & published",
+      "items": [
+        {
+          "title": "Exhibitions",
+          "detail": "Hungary, Belgium, France, Portugal, Israel, Korea, Japan (1998)"
+        },
+        {
+          "title": "Chalta Hai",
+          "detail": "Himmat Publications Trust, Bombay · 1973"
+        },
+        {
+          "title": "The Penguin Book of Indian Cartoons",
+          "detail": "1988"
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "email": "",
+    "phone": "",
+    "website": "",
+    "note": ""
+  },
+  "footer": {
+    "left": "Vijay Narain Seth (Vins), 1944–2014",
+    "right": "Artwork dates are not recorded in the collection catalogue."
+  },
+  "settings": {
+    "theme": {
+      "mode": "auto",
+      "accent": "#b4552e",
+      "fonts": "serif"
+    },
+    "contact": {
+      "whatsapp": "",
+      "call": "",
+      "instagram": ""
+    },
+    "sections": {
+      "work": true,
+      "about": true,
+      "career": true,
+      "record": true,
+      "contact": true
+    }
+  }
+}

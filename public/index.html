@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"__THEME__>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>__TITLE__</title>
+<meta name="description" content="__DESC__">
+<meta property="og:type" content="website">
+<meta property="og:title" content="__TITLE__">
+<meta property="og:description" content="__DESC__">
+<meta property="og:image" content="__IMAGE__">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Figtree:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/site.css">
+<link rel="stylesheet" href="/theme.css">
+</head>
+<body>
+<div id="site" class="wrap"><noscript><p class="empty">This portfolio needs JavaScript turned on.</p></noscript></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <div class="lb-info">
+    <p class="eyebrow" id="lb-eyebrow"></p>
+    <h3 id="lb-title"></h3>
+    <dl>
+      <div><dt>Medium</dt><dd id="lb-medium"></dd></div>
+      <div><dt>Dimensions</dt><dd id="lb-dim"></dd></div>
+      <div><dt>Year</dt><dd id="lb-year"></dd></div>
+    </dl>
+    <div class="lb-buy" id="lb-buy" hidden>
+      <p class="lb-price" id="lb-price"></p>
+      <button type="button" class="btn primary" id="lb-buy-btn">Buy this artwork</button>
+    </div>
+    <div class="lb-ctrl">
+      <button type="button" class="btn" id="lb-prev">Previous</button>
+      <button type="button" class="btn" id="lb-next">Next</button>
+    </div>
+  </div>
+  <button type="button" class="btn lb-close" id="lb-close">Close</button>
+</div>
+
+<div class="buy" id="buy" role="dialog" aria-modal="true" aria-labelledby="buy-h" hidden>
+  <div class="buy-card">
+    <button type="button" class="btn sm buy-close" id="buy-close">Close</button>
+    <p class="eyebrow">Buy this artwork</p>
+    <h2 id="buy-h">Artwork</h2>
+    <p class="buy-price" id="buy-price"></p>
+    <form id="buy-form" novalidate>
+      <label for="buy-name">Your name<input id="buy-name" name="name" autocomplete="name" required></label>
+      <label for="buy-email">Email<input id="buy-email" name="email" type="email" autocomplete="email" required></label>
+      <label for="buy-phone">Phone (optional)<input id="buy-phone" name="phone" type="tel" autocomplete="tel"></label>
+      <p class="msg" id="buy-msg" role="status"></p>
+      <div class="buy-ctl">
+        <button type="submit" class="btn primary" id="buy-pay">Pay securely</button>
+        <button type="button" class="btn" id="buy-cancel">Cancel</button>
+      </div>
+      <p class="hint">Payment is handled by Razorpay. After paying, the artist reviews the order, and approval unlocks your download link.</p>
+    </form>
+    <div class="buy-done" id="buy-done" hidden>
+      <p><strong>Payment received.</strong> Your order is waiting for the artist to approve it.</p>
+      <p class="hint">Keep this link. It shows the order status and the download as soon as the order is approved.</p>
+      <p class="buy-link"><a id="buy-link" href="#">Open your order page</a></p>
+      <button type="button" class="btn sm" id="buy-copy">Copy order link</button>
+    </div>
+  </div>
+</div>
+
+<nav class="rail" id="rail" aria-label="Contact the artist" hidden></nav>
+
+<script src="/site.js"></script>
+</body>
+</html>
